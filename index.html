@@ -1,10 +1,10 @@
 <!DOCTYPE html><html lang="en"><head>
 <meta charset="utf-8">
-<meta name="generator" content="ReSpec 28.1.0">
+<meta name="generator" content="ReSpec 32.3.0">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <style>
 dfn{cursor:pointer}
-.dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font:small Helvetica Neue,sans-serif,Droid Sans Fallback;background:#fff;color:#000;box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);border-radius:2px}
+.dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;color:#000;box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);border-radius:2px}
 .dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
 .dfn-panel:not(.docked)>.caret::after,.dfn-panel:not(.docked)>.caret::before{content:"";position:absolute;border:10px solid transparent;border-top:0;border-bottom:10px solid #fff;top:0}
 .dfn-panel:not(.docked)>.caret::before{border-bottom:9px solid #a2a9b1}
@@ -34,7 +34,6 @@ dfn{cursor:pointer}
 25%{transform:scale(1.25,1.25);opacity:.75}
 100%{transform:scale(1,1)}
 }
-.hljs{background:0 0!important}
 :is(h1,h2,h3,h4,h5,h6,a) abbr{border:none}
 dfn{font-weight:700}
 a.internalDFN{color:inherit;border-bottom:1px solid #99c;text-decoration:none}
@@ -48,8 +47,6 @@ a.bibref{text-decoration:none}
 }
 #references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}
 cite .bibref{font-style:normal}
-code{color:#c63501}
-th code{color:inherit}
 a[href].orcid{padding-left:4px;padding-right:4px}
 a[href].orcid>svg{margin-bottom:-2px}
 .toc a,.tof a{text-decoration:none}
@@ -74,14 +71,16 @@ details.respec-tests-details[open]{z-index:999999;position:absolute;border:thin 
 details.respec-tests-details[open]>summary{border-bottom:thin solid #cad3e2;padding-left:1em;margin-bottom:1em;line-height:2em}
 details.respec-tests-details>ul{width:100%;margin-top:-.3em}
 details.respec-tests-details>li{padding-left:1em}
-a[href].self-link:hover{opacity:1;text-decoration:none;background-color:transparent}
-h2,h3,h4,h5,h6{position:relative}
+.self-link:hover{opacity:1;text-decoration:none;background-color:transparent}
 aside.example .marker>a.self-link{color:inherit}
-:is(h2,h3,h4,h5,h6)>a.self-link{border:none;color:inherit;font-size:83%;height:2em;left:-1.6em;opacity:.5;position:absolute;text-align:center;text-decoration:none;top:0;transition:opacity .2s;width:2em}
-:is(h2,h3,h4,h5,h6)>a.self-link::before{content:"§";display:block}
+.header-wrapper{display:flex;align-items:baseline}
+:is(h2,h3,h4,h5,h6):not(#toc>h2,#abstract>h2,#sotd>h2,.head>h2){position:relative;left:-.5em}
+:is(h2,h3,h4,h5,h6):not(#toch2)+a.self-link{color:inherit;order:-1;position:relative;left:-1.1em;font-size:1rem;opacity:.5}
+:is(h2,h3,h4,h5,h6)+a.self-link::before{content:"§";text-decoration:none;color:var(--heading-text)}
+:is(h2,h3)+a.self-link{top:-.2em}
+:is(h4,h5,h6)+a.self-link::before{color:#000}
 @media (max-width:767px){
 dd{margin-left:0}
-:is(h2,h3,h4,h5,h6)>a.self-link{left:auto;top:auto}
 }
 @media print{
 .removeOnSave{display:none}
@@ -89,7 +88,6 @@ dd{margin-left:0}
 </style>
 <meta name="description" content="Design tokens are indivisible pieces of a design system such as colors,
         spacing, typography scale.">
-<link rel="canonical" href="https://www.w3.org/TR/community-group/">
 <style>
 var{position:relative;cursor:pointer}
 var[data-type]::after,var[data-type]::before{position:absolute;left:50%;top:-6px;opacity:0;transition:opacity .4s;pointer-events:none}
@@ -99,6 +97,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 </style>
 <script id="initialUserConfig" type="application/json">{
   "specStatus": "base",
+  "latestVersion": "https://tr.designtokens.org/",
   "edDraftURI": null,
   "editors": [
     {
@@ -137,29 +136,42 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     "branch": "main"
   },
   "tocIntroductory": true,
-  "publishISODate": "2022-01-05T00:00:00.000Z",
-  "generatedSubtitle": " 05 January 2022"
+  "logos": [
+    {
+      "src": "/logo_128_2x.png",
+      "url": "https://www.designtokens.org",
+      "alt": "Design Tokens Community Group",
+      "width": 128,
+      "height": 128,
+      "id": "dtcg-logo"
+    }
+  ],
+  "publishISODate": "2022-11-13T00:00:00.000Z",
+  "generatedSubtitle": "13 November 2022"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/base.css"></head>
   <body class="h-entry informative"><div class="head">
-     <h1 id="title" class="title">Design Tokens Technical Reports</h1>
-    
-    <p id="w3c-state"> <time class="dt-published" datetime="2022-01-05">05 January 2022</time></p>
+    <p class="logos"><a class="logo" href="https://www.designtokens.org"><img crossorigin="" alt="Design Tokens Community Group" height="128" id="dtcg-logo" src="/logo_128_2x.png" width="128">
+  </a></p>
+    <h1 id="title" class="title">Design Tokens Technical Reports</h1> 
+    <p id="w3c-state"> <time class="dt-published" datetime="2022-11-13">13 November 2022</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
         
+        <dt>Latest published version:</dt><dd>
+                <a href="https://tr.designtokens.org/">https://tr.designtokens.org/</a>
+              </dd>
         
         <dt>History:</dt><dd>
-        <a href="https://github.com/design-tokens/community-group/commits/main">Commit history</a>
-      </dd>
+                    <a href="https://github.com/design-tokens/community-group/commits/main">Commit history</a>
+                  </dd>
         
         
         
         
         
-        <dt>Editors:</dt>
-        <dd class="editor p-author h-card vcard">
+        <dt>Editors:</dt><dd class="editor p-author h-card vcard">
     <span class="p-name fn">Adekunle Oduye</span>
   </dd><dd class="editor p-author h-card vcard">
     <span class="p-name fn">Ayesha Mazumdar</span>
@@ -198,7 +210,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <hr title="Separator for header">
   </div>
     
-    <section id="abstract" class="introductory"><h2 id="abstract-0">Abstract<a class="self-link" href="#abstract" aria-label="Permalink for Section"></a></h2>
+    <section id="abstract" class="introductory"><h2>Abstract</h2>
       <p>
         Design tokens are indivisible pieces of a design system such as colors,
         spacing, typography scale.
@@ -210,26 +222,28 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         <a href="https://twitter.com/jina">Jina</a>).
       </p>
     </section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li><li class="tocline"><a class="tocxref" href="#modules"><bdi class="secno">1. </bdi>Modules</a></li><li class="tocline"><a class="tocxref" href="#resources"><bdi class="secno">2. </bdi>Resources</a></li><li class="tocline"><a class="tocxref" href="#acknowledgements"><bdi class="secno">A. </bdi>Acknowledgements</a></li></ol></nav>
-    <section id="modules">
-      <h2 id="x1-modules"><bdi class="secno">1. </bdi>Modules<a class="self-link" href="#modules" aria-label="Permalink for Section 1."></a></h2>
+    <section id="modules"><div class="header-wrapper"><h2 id="x1-modules"><bdi class="secno">1. </bdi>Modules</h2><a class="self-link" href="#modules" aria-label="Permalink for Section 1."></a></div>
+      
       <p>The Design Tokens specification is composed of multiple modules:</p>
       <ul>
         <li>
-          <a href="./format">Format</a>
+          <a href="./format/">Format</a>
         </li>
         <li>Color (coming soon)</li>
         <li>Animations (coming soon)</li>
       </ul>
     </section>
-    <section id="resources"><h2 id="x2-resources"><bdi class="secno">2. </bdi>Resources<a class="self-link" href="#resources" aria-label="Permalink for Section 2."></a></h2><ul>
+    <section id="resources"><div class="header-wrapper"><h2 id="x2-resources"><bdi class="secno">2. </bdi>Resources</h2><a class="self-link" href="#resources" aria-label="Permalink for Section 2."></a></div>
+<ul>
 <li><a href="https://github.com/design-tokens/community-group/blob/main/CODE_OF_CONDUCT.md">Code of conduct</a></li>
-</ul></section>
+</ul>
+</section>
 
-    <section class="appendix" id="acknowledgements">
-      <h2 id="a-acknowledgements"><bdi class="secno">A. </bdi>Acknowledgements<a class="self-link" href="#acknowledgements" aria-label="Permalink for Appendix A."></a></h2>
+    <section class="appendix" id="acknowledgements"><div class="header-wrapper"><h2 id="a-acknowledgements"><bdi class="secno">A. </bdi>Acknowledgements</h2><a class="self-link" href="#acknowledgements" aria-label="Permalink for Appendix A."></a></div>
+      
       <p>
         We'd also like to thank the following contributors:
-        <span id="gh-contributors">Abhishek Warokar, Ale Muñoz, Benjamin Kindle, Chase McCoy, Dale Sande, Dominique Hazael-Massieux, Evan Lovely, Fabian Friedl, Guilherme Nagüeva, Jina Anne, Jon Levine, Kaelig Deloumeau-Prigent, Kilian Valkhof, KLS, Miriam Suzanne, Namık Özgür Aydın, Rob Eisenberg, Robin, and Salem Ghoweri</span>.
+        <span id="gh-contributors">Abhishek Warokar, Ale Muñoz, Asher, Benjamin Kindle, Bjørn Madsen, Chase McCoy, Dale Sande, Daniel Flynn, Dominique Hazael-Massieux, Evan Lovely, Fabian Friedl, Guilherme Nagüeva, Ivan Maksimovic, Jina Anne, Jon Levine, Kaelig Deloumeau-Prigent, Kilian Valkhof, KLS, Laurent Thiebault, Miriam Suzanne, Namık Özgür Aydın, Rob Eisenberg, Robin, Salem Cobalt, Sébastien Barbieri, and Sigurd Fosseng</span>.
       </p>
     </section>
   
