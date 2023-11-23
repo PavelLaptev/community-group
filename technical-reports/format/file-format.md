@@ -7,6 +7,7 @@ JSON was chosen as an interchange format on the basis of:
 - Broad support in many programming languages' standard libraries. This is expected to lower barriers to entry for developers writing software that supports design token files.
 - Current popularity and widespread use. This is expected to lower the learning curve as many people will already be familiar with JSON.
 - Being text-based (rather than binary) allows hand-editing design token files without needing specialized software other than a basic text editor. It also means the files are somewhat human-readable.
+  ddsfsd
 
 ## Media type (MIME type)
 
