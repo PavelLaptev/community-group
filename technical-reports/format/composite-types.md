@@ -7,7 +7,7 @@ Every shadow style has the exact same parts (color, X & Y offsets, etc.), but th
 Specifically, a composite type has the following characteristics:
 
 - Its value is an object or array, potentially containing nested objects or arrays, following a pre-defined structure where the properties of the (nested) object(s) or the elements of the (nested) arrays are sub-values.
-- Sub-values may be explicit values (e.g. `"#ff0000"`) or references to other design tokens that have sub-value's type (e.g. `"{some.other.token}"`).
+- Sub-values may be explicit values (e.g. `"#ff0000"`) or references to other design tokens that have sub-value's type (e.g. `"{some.other.token}"`). ad
 
 A design token whose type happens to be a composite type is sometimes also called a composite (design) token. Besides their type, there is nothing special about composite tokens. They can have all the other additional properties like [`$description`](#description) or [`$extensions`](#extensions). They can also be referenced by other design tokens.
 
@@ -77,7 +77,7 @@ A design token whose type happens to be a composite type is sometimes also calle
 
 ## Groups versus composite tokens
 
-At first glance, groups and composite tokens might look very similar. However, they are intended to solve different problems and therefore have some important differences:
+At first glance, groups and composite tokens might look very similar. However, they are intended to solve different problems and therefore have some important differences: df
 
 - **[Groups](#groups)** are for arbitrarily grouping tokens for the purposes of naming and/or organization.
   - They impose no rules or restrictions on how many tokens or nested groups you put within them, what they are called, or what the types of the tokens within should be. As such, tools MUST NOT try to infer any special meaning or typing of tokens based on a group they happen to be in.

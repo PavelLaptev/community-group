@@ -11,11 +11,11 @@ end_of_line = lf
 
 # Markdown syntax specifies that trailing whitespaces can be meaningful,
 # so let's not trim those. e.g. 2 trailing spaces = linebreak (<br />)
-# See https://daringfireball.net/projects/markdown/syntax#p
+# See https://daringfireball.net/projects/markdown/syntax#p sf
 [*.md]
 trim_trailing_whitespace = false
 
-# Disable trailing whitespace removal in diff files,
+# Disable trailing whitespace removal in diff files, sdf
 # where whitespace is meaningful
 [*.diff]
 trim_trailing_whitespace = false
