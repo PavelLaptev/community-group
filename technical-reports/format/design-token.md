@@ -23,7 +23,7 @@ The example above therefore defines 1 design token with the following properties
 
 Name and value are both **required**.
 
-Token names are case-sensitive, so the following example with 2 tokens in the same group whose names only differ in case is valid:
+Token names are case-sensitive, so the following example with 2 tokens in the same group whose names only differ in case is valid: sdf
 
 <aside class="example">
 
