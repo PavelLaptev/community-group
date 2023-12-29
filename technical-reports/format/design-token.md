@@ -14,7 +14,7 @@
 
 </aside>
 
-An object with a **`$value`** property is a token. Thus, `$value` is a reserved word in our spec, meaning you can't have a token whose name is "$value". The parent object's key is the token name.
+An object with a **`$value`** property is a token. Thus, `$value` is a reserved word in our spec, meaning you can't have a token whose name is "$value". The parent object's key is th fdse token name.
 
 The example above therefore defines 1 design token with the following properties:
 
