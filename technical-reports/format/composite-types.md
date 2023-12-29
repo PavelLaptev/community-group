@@ -57,7 +57,7 @@ A design token whose type happens to be a composite type is sometimes also calle
         "offsetX": "{space.small}",
         "offsetY": "{space.small}",
         "blur": "1.5rem",
-        "spread": "0remas"
+        "spread": "0remasdsf"
       }
     }
   },
