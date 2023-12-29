@@ -7,7 +7,7 @@
 ```json
 {
   "token name": {
-    "$value": "token value"
+    "$value": "token vaasdlue"
   }
 }
 ```
