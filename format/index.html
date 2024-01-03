@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="en"><head>
 <meta charset="utf-8">
-<meta name="generator" content="ReSpec 32.3.0">
+<meta name="generator" content="ReSpec 34.3.0">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <style>
 span.example-title{text-transform:none}
@@ -187,8 +187,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       "id": "dtcg-logo"
     }
   ],
-  "publishISODate": "2022-11-14T00:00:00.000Z",
-  "generatedSubtitle": "Draft Community Group Report 14 November 2022"
+  "publishISODate": "2024-01-03T00:00:00.000Z",
+  "generatedSubtitle": "Draft Community Group Report 03 January 2024"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/cg-draft"></head>
   <body class="h-entry"><div class="head">
@@ -197,7 +197,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <h1 id="title" class="title">Design Tokens Format Module</h1> 
     <p id="w3c-state">
       <a href="https://www.w3.org/standards/types#reports">Draft Community Group Report</a>
-      <time class="dt-published" datetime="2022-11-14">14 November 2022</time>
+      <time class="dt-published" datetime="2024-01-03">03 January 2024</time>
     </p>
     <dl>
       
@@ -228,6 +228,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         <a href="https://github.com/design-tokens/community-group/issues/new/choose">new issue</a>,
         <a href="https://github.com/design-tokens/community-group/issues/">open issues</a>)
       </dd>
+      
     </dl>
     
     
@@ -302,16 +303,16 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       </p>
       <ul>
         <li>
-          <a data-link-type="dfn" href="#dfn-design-tool" class="internalDFN" id="ref-for-dfn-design-tool-1">Design tools</a> have begun allowing designers to label and reference
+          <a data-link-type="dfn|abstract-op" href="#dfn-design-tool" class="internalDFN" id="ref-for-dfn-design-tool-1">Design tools</a> have begun allowing designers to label and reference
           shared values for design properties like colors and sizes.
         </li>
         <li>
-          <a data-link-type="dfn" href="#dfn-translation-tool" class="internalDFN" id="ref-for-dfn-translation-tool-1">Translation tools</a> exist that can convert source design token data
+          <a data-link-type="dfn|abstract-op" href="#dfn-translation-tool" class="internalDFN" id="ref-for-dfn-translation-tool-1">Translation tools</a> exist that can convert source design token data
           into platform-specific source code that can directly be used by
           developers.
         </li>
         <li>
-          <a data-link-type="dfn" href="#dfn-documentation-tool" class="internalDFN" id="ref-for-dfn-documentation-tool-1">Documentation tools</a> can display design token names rather than the
+          <a data-link-type="dfn|abstract-op" href="#dfn-documentation-tool" class="internalDFN" id="ref-for-dfn-documentation-tool-1">Documentation tools</a> can display design token names rather than the
           raw values in design specs and style guides.
         </li>
       </ul>
@@ -324,7 +325,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       <ul>
         <li>
           Extracting design tokens from design files and feeding them into
-          <a data-link-type="dfn" href="#dfn-translation-tool" class="internalDFN" id="ref-for-dfn-translation-tool-2">translation tools</a> to then be converted into platform-specific code
+          <a data-link-type="dfn|abstract-op" href="#dfn-translation-tool" class="internalDFN" id="ref-for-dfn-translation-tool-2">translation tools</a> to then be converted into platform-specific code
         </li>
         <li>
           Maintaining a "single source of truth" for design tokens and
@@ -347,7 +348,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     </section>
 
     <section id="terminology"><div class="header-wrapper"><h2 id="x3-terminology"><bdi class="secno">3. </bdi>Terminology</h2><a class="self-link" href="#terminology" aria-label="Permalink for Section 3."></a></div>
-<p>These definitions are focused on the technical aspects of the specification, aimed at implementers such as <a data-link-type="dfn" href="#dfn-design-tool" class="internalDFN" id="ref-for-dfn-design-tool-2">design tool</a> vendors. Definitions for designers and developers are available at <a href="https://www.designtokens.org/glossary/">designtokens.org</a>.</p>
+<p>These definitions are focused on the technical aspects of the specification, aimed at implementers such as <a data-link-type="dfn|abstract-op" href="#dfn-design-tool" class="internalDFN" id="ref-for-dfn-design-tool-2">design tool</a> vendors. Definitions for designers and developers are available at <a href="https://www.designtokens.org/glossary/">designtokens.org</a>.</p>
 <section id="design-token"><div class="header-wrapper"><h3 id="x3-1-design-token"><bdi class="secno">3.1 </bdi>(Design) Token</h3><a class="self-link" href="#design-token" aria-label="Permalink for Section 3.1"></a></div>
 <p>A (Design) Token is an information associated with a name, at minimum a name/value pair.</p>
 <p>For example:</p>
@@ -423,8 +424,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 <p>Token tools can use Types to infer the purpose of a token.</p>
 <p>For example:</p>
 <ul>
-<li>A <a data-link-type="dfn" href="#dfn-translation-tool" class="internalDFN" id="ref-for-dfn-translation-tool-3">translation tool</a> might reference a token's type to convert the source value into the correct platform-specific format.</li>
-<li>A visual <a data-link-type="dfn" href="#dfn-design-tool" class="internalDFN" id="ref-for-dfn-design-tool-3">design tool</a> might reference type to present tokens in the appropriate part of their UI - as in, color tokens are listed in the color picker, font tokens in the text styling UI's fonts list, and so on.</li>
+<li>A <a data-link-type="dfn|abstract-op" href="#dfn-translation-tool" class="internalDFN" id="ref-for-dfn-translation-tool-3">translation tool</a> might reference a token's type to convert the source value into the correct platform-specific format.</li>
+<li>A visual <a data-link-type="dfn|abstract-op" href="#dfn-design-tool" class="internalDFN" id="ref-for-dfn-design-tool-3">design tool</a> might reference type to present tokens in the appropriate part of their UI - as in, color tokens are listed in the color picker, font tokens in the text styling UI's fonts list, and so on.</li>
 </ul>
 </section><section id="group"><div class="header-wrapper"><h3 id="x3-7-group"><bdi class="secno">3.7 </bdi>Group</h3><a class="self-link" href="#group" aria-label="Permalink for Section 3.7"></a></div>
 <p>A group is a set of tokens belonging to a specific category.</p>
@@ -559,7 +560,7 @@ $font-size: 16px;
 <ul>
 <li>Style guide generators <em class="rfc2119">MAY</em> display the description text alongside a visual preview of the token</li>
 <li>IDEs <em class="rfc2119">MAY</em> display the description as a tooltip for auto-completion (similar to how API docs are displayed)</li>
-<li><a data-link-type="dfn" href="#dfn-design-tool" class="internalDFN" id="ref-for-dfn-design-tool-4">Design tools</a> <em class="rfc2119">MAY</em> display the description as a tooltip or alongside tokens wherever they can be selected</li>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-design-tool" class="internalDFN" id="ref-for-dfn-design-tool-4">Design tools</a> <em class="rfc2119">MAY</em> display the description as a tooltip or alongside tokens wherever they can be selected</li>
 <li>Translation tools <em class="rfc2119">MAY</em> render the description to a source code comment alongside the variable or constant they export.</li>
 </ul>
 <p>The value of the <code>$description</code> property <em class="rfc2119">MUST</em> be a plain JSON string, for example:</p>
@@ -856,13 +857,13 @@ $font-size: 16px;
 </section><section id="gui-tools"><div class="header-wrapper"><h4 id="x6-2-2-gui-tools"><bdi class="secno">6.2.2 </bdi>GUI tools</h4><a class="self-link" href="#gui-tools" aria-label="Permalink for Section 6.2.2"></a></div>
 <p>Tools that let users pick or edit tokens via a GUI <em class="rfc2119">MAY</em> use the grouping structure to display a suitable form of progressive disclosure, such as a collapsible tree view.</p>
 <figure id="figure-group-progressive-disclosure">
-  <img src="./group-progressive-disclosure.png" alt="" height="426" width="506">
-  <figcaption>Figure <bdi class="figno">1</bdi> <span class="fig-title">Progressive disclosure groups</span></figcaption>
+  <img src="./group-progressive-disclosure.png" alt="">
+  <figcaption><a class="self-link" href="#figure-group-progressive-disclosure">Figure <bdi class="figno">1</bdi></a> <span class="fig-title">Progressive disclosure groups</span></figcaption>
 </figure>
 
 </section><section id="translation-tools"><div class="header-wrapper"><h4 id="x6-2-3-translation-tools"><bdi class="secno">6.2.3 </bdi>Translation tools</h4><a class="self-link" href="#translation-tools" aria-label="Permalink for Section 6.2.3"></a></div>
 <p>Token names are not guaranteed to be unique within the same file. The same name can be used in different groups. Also, translation tools <em class="rfc2119">MAY</em> need to export design tokens in a uniquely identifiable way, such as variables in code. Translation tools <em class="rfc2119">SHOULD</em> therefore use design tokens' paths as these <em>are</em> unique within a file.</p>
-<p>For example, a <a data-link-type="dfn" href="#dfn-translation-tool" class="internalDFN" id="ref-for-dfn-translation-tool-4">translation tool</a> like <a href="https://amzn.github.io/style-dictionary/">Style Dictionary</a> might use the following design token file:</p>
+<p>For example, a <a data-link-type="dfn|abstract-op" href="#dfn-translation-tool" class="internalDFN" id="ref-for-dfn-translation-tool-4">translation tool</a> like <a href="https://amzn.github.io/style-dictionary/">Style Dictionary</a> might use the following design token file:</p>
 <aside class="example" id="example-12"><div class="marker">
     <a class="self-link" href="#example-12">Example<bdi> 12</bdi></a>
   </div>
@@ -931,14 +932,14 @@ $brand-typeface-secondary: 'Times New Roman';
 </aside>
 
 <p>When a tool needs the actual value of a token it <em class="rfc2119">MUST</em> resolve the reference - i.e. lookup the token being referenced and fetch its value. In the above example, the "alias name" token's value would resolve to 1234 because it references the token whose path is <code>{group name.token name}</code> which has the value 1234.</p>
-<p>Tools <em class="rfc2119">SHOULD</em> preserve references and therefore only resolve them whenever the actual value needs to be retrieved. For instance, in a <a data-link-type="dfn" href="#dfn-design-tool" class="internalDFN" id="ref-for-dfn-design-tool-5">design tool</a>, changes to the value of a token being referenced by aliases <em class="rfc2119">SHOULD</em> be reflected wherever those aliases are being used.</p>
+<p>Tools <em class="rfc2119">SHOULD</em> preserve references and therefore only resolve them whenever the actual value needs to be retrieved. For instance, in a <a data-link-type="dfn|abstract-op" href="#dfn-design-tool" class="internalDFN" id="ref-for-dfn-design-tool-5">design tool</a>, changes to the value of a token being referenced by aliases <em class="rfc2119">SHOULD</em> be reflected wherever those aliases are being used.</p>
 <p>Aliases <em class="rfc2119">MAY</em> reference other aliases. In this case, tools <em class="rfc2119">MUST</em> follow each reference until they find a token with an explicit value. Circular references are not allowed. If a design token file contains circular references, then the value of all tokens in that chain is unknown and an appropriate error or warning message <em class="rfc2119">SHOULD</em> be displayed to the user.</p>
 <div class="note" id="issue-container-generatedID-5"><div role="heading" class="ednote-title marker" id="h-ednote-5" aria-level="3"><span>Editor's note</span><span class="issue-label">: JSON Pointer syntax</span></div><p class="">
   The format editors are currently researching JSON Pointer syntax to inform the exact syntax for aliases in tokens. <a href="https://datatracker.ietf.org/doc/html/rfc6901#section-5">https://datatracker.ietf.org/doc/html/rfc6901#section-5</a>
 </p></div></section>
 
     <section id="types"><div class="header-wrapper"><h2 id="x8-types"><bdi class="secno">8. </bdi>Types</h2><a class="self-link" href="#types" aria-label="Permalink for Section 8."></a></div>
-<p>Many tools need to know what kind of value a given token represents to process it sensibly. Translation tools <em class="rfc2119">MAY</em> need to convert or format tokens differently depending on their type. <a data-link-type="dfn" href="#dfn-design-tool" class="internalDFN" id="ref-for-dfn-design-tool-6">Design tools</a> <em class="rfc2119">MAY</em> present the user with different kinds of input when editing tokens of a certain type (such as color picker, slider, text input, etc.). Style guide generators <em class="rfc2119">MAY</em> use different kinds of previews for different types of tokens.</p>
+<p>Many tools need to know what kind of value a given token represents to process it sensibly. Translation tools <em class="rfc2119">MAY</em> need to convert or format tokens differently depending on their type. <a data-link-type="dfn|abstract-op" href="#dfn-design-tool" class="internalDFN" id="ref-for-dfn-design-tool-6">Design tools</a> <em class="rfc2119">MAY</em> present the user with different kinds of input when editing tokens of a certain type (such as color picker, slider, text input, etc.). Style guide generators <em class="rfc2119">MAY</em> use different kinds of previews for different types of tokens.</p>
 <p>Since design token files are JSON files, all the basic JSON types are available:</p>
 <ul>
 <li>String</li>
@@ -1212,7 +1213,7 @@ $translucent-shadow: hsla(300, 100%, 50%, 0.5);
         <span class="hljs-attr">"offsetX"</span>: <span class="hljs-string">"{space.small}"</span>,
         <span class="hljs-attr">"offsetY"</span>: <span class="hljs-string">"{space.small}"</span>,
         <span class="hljs-attr">"blur"</span>: <span class="hljs-string">"1.5rem"</span>,
-        <span class="hljs-attr">"spread"</span>: <span class="hljs-string">"0rem"</span>
+        <span class="hljs-attr">"spread"</span>: <span class="hljs-string">"0remasasddsf"</span>
       }
     }
   },
@@ -1241,7 +1242,7 @@ $translucent-shadow: hsla(300, 100%, 50%, 0.5);
 <li><strong>Composite tokens</strong> are individual design tokens whose values are made up of several sub-values.<ul>
 <li>Since they are design tokens, they can be referenced by other design tokens. This is not true for groups.</li>
 <li>Their type must be one of the composite types defined in this specification. Therefore their names and types of their sub-values are pre-defined. Adding additional sub-values or setting values that don't have the correct type make the composite token invalid.</li>
-<li>Tools <em class="rfc2119">MAY</em> provide specialised functionality for composite tokens. For example, a <a data-link-type="dfn" href="#dfn-design-tool" class="internalDFN" id="ref-for-dfn-design-tool-7">design tool</a> may let the user pick from a list of all available shadow tokens when applying a drop shadow effect to an element.</li>
+<li>Tools <em class="rfc2119">MAY</em> provide specialised functionality for composite tokens. For example, a <a data-link-type="dfn|abstract-op" href="#dfn-design-tool" class="internalDFN" id="ref-for-dfn-design-tool-7">design tool</a> may let the user pick from a list of all available shadow tokens when applying a drop shadow effect to an element.</li>
 </ul>
 </li>
 </ul>
@@ -1343,7 +1344,7 @@ $translucent-shadow: hsla(300, 100%, 50%, 0.5);
     <a class="self-link" href="#example-fallback-for-string-stroke-style">Example<bdi> 28</bdi></a><span class="example-title">: Fallback for string stroke style</span>
   </div>
 
-<p>Some <a data-link-type="dfn" href="#dfn-design-tool" class="internalDFN" id="ref-for-dfn-design-tool-8">design tools</a> like Figma don't support inset, outset or double style lines. When a user applies a <code>stroke-style</code> token with those values, such tools might therefore fallback to displaying a solid line instead.</p>
+<p>Some <a data-link-type="dfn|abstract-op" href="#dfn-design-tool" class="internalDFN" id="ref-for-dfn-design-tool-8">design tools</a> like Figma don't support inset, outset or double style lines. When a user applies a <code>stroke-style</code> token with those values, such tools might therefore fallback to displaying a solid line instead.</p>
 </aside>
 
 </section></section><section id="border"><div class="header-wrapper"><h3 id="x9-3-border"><bdi class="secno">9.3 </bdi>Border</h3><a class="self-link" href="#border" aria-label="Permalink for Section 9.3"></a></div>
@@ -1384,7 +1385,7 @@ $translucent-shadow: hsla(300, 100%, 50%, 0.5);
 </aside>
 
 <div class="issue" id="issue-container-number-99"><div role="heading" class="issue-title marker" id="h-issue-2" aria-level="4"><a href="https://github.com/design-tokens/community-group/issues/99"><span class="issue-number">Issue 99</span></a><span class="issue-label">: Border type feedback <a class="respec-gh-label" href="https://github.com/design-tokens/community-group/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Composite+Type+Feedback%22" style="background-color: rgb(238, 240, 235); color: rgb(0, 0, 0);" aria-label="GitHub label: Composite Type Feedback">Composite Type Feedback</a></span></div><div class="">
-  Is the current specification for borders fit for purpose? Does it need more sub-values to account for features like outset, border images, multiple borders, etc. that some platforms and <a data-link-type="dfn" href="#dfn-design-tool" class="internalDFN" id="ref-for-dfn-design-tool-9">design tools</a> have?
+  Is the current specification for borders fit for purpose? Does it need more sub-values to account for features like outset, border images, multiple borders, etc. that some platforms and <a data-link-type="dfn|abstract-op" href="#dfn-design-tool" class="internalDFN" id="ref-for-dfn-design-tool-9">design tools</a> have?
 </div></div>
 
 </section><section id="transition"><div class="header-wrapper"><h3 id="x9-4-transition"><bdi class="secno">9.4 </bdi>Transition</h3><a class="self-link" href="#transition" aria-label="Permalink for Section 9.4"></a></div>
@@ -1614,24 +1615,24 @@ $translucent-shadow: hsla(300, 100%, 50%, 0.5);
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-design-tool-1" title="§ 2. Introduction">§ 2. Introduction</a> 
-  </li><li>
-    <a href="#ref-for-dfn-design-tool-2" title="§ 3. Terminology">§ 3. Terminology</a> 
-  </li><li>
-    <a href="#ref-for-dfn-design-tool-3" title="§ 3.6 Type">§ 3.6 Type</a> 
-  </li><li>
-    <a href="#ref-for-dfn-design-tool-4" title="§ 5.3 Description">§ 5.3 Description</a> 
-  </li><li>
-    <a href="#ref-for-dfn-design-tool-5" title="§ 7. Aliases / references">§ 7. Aliases / references</a> 
-  </li><li>
-    <a href="#ref-for-dfn-design-tool-6" title="§ 8. Types">§ 8. Types</a> 
-  </li><li>
-    <a href="#ref-for-dfn-design-tool-7" title="§ 9.1 Groups versus composite tokens">§ 9.1 Groups versus composite tokens</a> 
-  </li><li>
-    <a href="#ref-for-dfn-design-tool-8" title="§ 9.2.3 Fallbacks">§ 9.2.3 Fallbacks</a> 
-  </li><li>
-    <a href="#ref-for-dfn-design-tool-9" title="§ 9.3 Border">§ 9.3 Border</a> 
-  </li>
+      <a href="#ref-for-dfn-design-tool-1" title="§ 2. Introduction">§ 2. Introduction</a> 
+    </li><li>
+      <a href="#ref-for-dfn-design-tool-2" title="§ 3. Terminology">§ 3. Terminology</a> 
+    </li><li>
+      <a href="#ref-for-dfn-design-tool-3" title="§ 3.6 Type">§ 3.6 Type</a> 
+    </li><li>
+      <a href="#ref-for-dfn-design-tool-4" title="§ 5.3 Description">§ 5.3 Description</a> 
+    </li><li>
+      <a href="#ref-for-dfn-design-tool-5" title="§ 7. Aliases / references">§ 7. Aliases / references</a> 
+    </li><li>
+      <a href="#ref-for-dfn-design-tool-6" title="§ 8. Types">§ 8. Types</a> 
+    </li><li>
+      <a href="#ref-for-dfn-design-tool-7" title="§ 9.1 Groups versus composite tokens">§ 9.1 Groups versus composite tokens</a> 
+    </li><li>
+      <a href="#ref-for-dfn-design-tool-8" title="§ 9.2.3 Fallbacks">§ 9.2.3 Fallbacks</a> 
+    </li><li>
+      <a href="#ref-for-dfn-design-tool-9" title="§ 9.3 Border">§ 9.3 Border</a> 
+    </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-translation-tool" aria-label="Links in this document to definition: Translation tool">
       <span class="caret"></span>
@@ -1642,12 +1643,12 @@ $translucent-shadow: hsla(300, 100%, 50%, 0.5);
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-translation-tool-1" title="§ 2. Introduction">§ 2. Introduction</a> <a href="#ref-for-dfn-translation-tool-2" title="Reference 2">(2)</a> 
-  </li><li>
-    <a href="#ref-for-dfn-translation-tool-3" title="§ 3.6 Type">§ 3.6 Type</a> 
-  </li><li>
-    <a href="#ref-for-dfn-translation-tool-4" title="§ 6.2.3 Translation tools">§ 6.2.3 Translation tools</a> 
-  </li>
+      <a href="#ref-for-dfn-translation-tool-1" title="§ 2. Introduction">§ 2. Introduction</a> <a href="#ref-for-dfn-translation-tool-2" title="Reference 2">(2)</a> 
+    </li><li>
+      <a href="#ref-for-dfn-translation-tool-3" title="§ 3.6 Type">§ 3.6 Type</a> 
+    </li><li>
+      <a href="#ref-for-dfn-translation-tool-4" title="§ 6.2.3 Translation tools">§ 6.2.3 Translation tools</a> 
+    </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-documentation-tool" aria-label="Links in this document to definition: Documentation tool">
       <span class="caret"></span>
@@ -1658,8 +1659,8 @@ $translucent-shadow: hsla(300, 100%, 50%, 0.5);
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-documentation-tool-1" title="§ 2. Introduction">§ 2. Introduction</a> 
-  </li>
+      <a href="#ref-for-dfn-documentation-tool-1" title="§ 2. Introduction">§ 2. Introduction</a> 
+    </li>
   </ul>
     </div><script id="respec-dfn-panel">(() => {
 // @ts-check
