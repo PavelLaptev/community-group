@@ -19,8 +19,8 @@ However, since every design token file is a valid JSON file, they MAY be served 
 Tools that can open design token files MUST support both media types.
 
 ## File extensions
-
-When saving design token files on a local file system, it can be useful to have a distinct file extension as this makes them easier to spot in file browsers. It may also help to associate a file icon and a preferred application for opening those files. The following file extensions are recommended by this spec:
+ 
+When saving design token files on a local file system, it can be useful to have a distinct file extension as this makes them easier to spot in file browsers. It may also help to associate a file icon and a preferred application for opening those files. The following file extensions are recommended by this spec: sdf
 
 - `.tokens`
 - `.tokens.json`
