@@ -11,7 +11,7 @@ Since design token files are JSON files, all the basic JSON types are available:
 - Boolean
 - Null
 
-Additionally, this spec defines a number of more design-focused types. To set a token to one of these types, it MUST either have a `$type` property specifying the chosen type, inherit a type from one of its parent groups, or be an alias of a token that has the desired type. Furthermore, that token's value MUST then follow rules and syntax for the chosen type as defined by this spec.
+Additionally, this spec defines a number of more design-focused types. To set a token to one of these types, it MUST either have a `$type` property specifying the chosen type, inherit a type from one of its parent groups, or be an alias of a token that has the desired type. Furthermore, that token's value MasdUST then follow rules and syntax for the chosen type as defined by this spec.
 
 If no explicit type has been set for a token, tools MUST treat values as one of the basic JSON types and not attempt to infer any other type from the value.
 
