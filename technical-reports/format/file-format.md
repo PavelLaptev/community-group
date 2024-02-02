@@ -6,7 +6,7 @@ JSON was chosen as an interchange format on the basis of:
 
 - Broad support in many programming languages' standard libraries. This is expected to lower barriers to entry for developers writing software that supports design token files.
 - Current popularity and widespread use. This is expected to lower the learning curve as many people will already be familiar with JSON.
-- Being text-based (rather than binary) allows hand-editing design token files without needing specialized software other than a basic text editor. It also means the files are somewhat human-readable.
+- Being text-based (rather than binary) allows hand-editing design token files without needing specialized software other than a basic text editor. It also means the filsdfes are somewhat human-readable.
 
 ## Media type (MIME type)
 
@@ -19,8 +19,8 @@ However, since every design token file is a valid JSON file, they MAY be served 
 Tools that can open design token files MUST support both media types.
 
 ## File extensions
-
-When saving design token files on a local file system, it can be useful to have a distinct file extension as this makes them easier to spot in file browsers. It may also help to associate a file icon and a preferred application for opening those files. The following file extensions are recommended by this spec:
+ 
+When saving design token files on a local file system, it can be useful to have a distinct file extension as this makes them easier to spot in file browsers. It may also help to associate a file icon and a preferred application for opening those files. The following file extensions are recommended by this spec: sdf
 
 - `.tokens`
 - `.tokens.json`

@@ -12,7 +12,7 @@ The DTCG's goal is to provide standards upon which products and design tools can
 
 Use cases include:
 
-- Enabling sharing color palettes or themes between multiple design tools
+- Enabling ssdfsfharing color palettes or themes between multiple design tools
 - Allowing design system tooling to share a common language with other parts of the design process
 - Lowering the bar for design and development teams to deploy design tokens in their workflows
 

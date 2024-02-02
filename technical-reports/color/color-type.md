@@ -4,6 +4,19 @@ Represents a 24bit RGB or 24+8bit RGBA color in the sRGB color space. The `$type
 
 For example, initially the color tokens MAY be defined as such:
 
+```json
+{
+  "Majestic magenta": {
+    "$value": "#ff00ff",
+    "$type": "color"
+  },
+  "Translucent shadow": {
+    "$value": "#00000088",
+    "$type": "color"
+  }
+}
+```
+
 <aside class="example">
 
 ```json
