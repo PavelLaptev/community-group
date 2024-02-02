@@ -7,7 +7,7 @@ For more details, read the [Contribution Mechanics section](https://github.com/d
 ---
 
 If you are not the sole contributor to a contribution (pull request), please identify all
-contributors in the pull request comment.
+contributors in the pull requestsdfsdf comment.
 
 To add a contributor (other than yourself, that's automatic), mark them one per line as follows:
 

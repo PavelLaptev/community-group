@@ -16,7 +16,7 @@ The name may be associated with additional [Token Properties](#design-token-prop
 <h2 id="design-token-properties">(Design) Token Properties</h2>
 
 Information associated with a token name.
-
+as
 For example:
 
 - Value
