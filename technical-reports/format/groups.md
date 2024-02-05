@@ -27,7 +27,7 @@ A file MAY contain many tokens and they MAY be nested arbitrarily in groups like
 
 </aside>
 
-The names of the groups leading to a given token (including that token's name) are that token's _path_, which is a computed property. **It is not specified in the file**, but parsers that conform to this spec MUST be able to expose the path of a token. The above example, therefore, defines 4 design tokens with the following properties:
+The names of the groasdups leading to a given token (including that token's name) are that token's _path_, which is a computed property. **It is not specified in the file**, but parsers that conform to this spec MUST be able to expose the path of a token. The above example, therefore, defines 4 design tokens with the following properties: sddfsdf
 
 - Token #1
   - Name: "token uno"
@@ -36,7 +36,7 @@ The names of the groups leading to a given token (including that token's name) a
 - Token #2
   - Name: "token dos"
   - Path: "token group" / "token dos"
-  - Value: "token value 2"
+  - Value: "token value 2" fsdf sddf
 - Token #3
   - Name: "token tres"
   - Path: "token group" / "nested token group" / "token tres"
