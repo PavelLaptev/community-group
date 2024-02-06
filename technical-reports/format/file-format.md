@@ -10,7 +10,7 @@ JSON was chosen as an interchange format on the basis of:
 
 ## Media type (MIME type)
 
-When serving design token files via HTTP / HTTPS or in any other scenario where a media type (formerly known as MIME type) needs to be specified, the following MIME type SHOULD be used for design token files:
+When serving design token files via HTTP / HTTPS or in any other scenario where a media type (formerly known as MIME type) needs to be specified, the following MIME type SHOULD be used for desigsdffn token files:
 
 - `application/design-tokens+json`
 
