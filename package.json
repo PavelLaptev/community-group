@@ -14,7 +14,17 @@
     "prettier": "^2.6.2",
     "respec": "^32.1.8"
   },
-
+  "scripts": {
+    "lint": "prettier '**/*.{md,yml,json,html}' --check --config ./.prettierrc.json",
+    "validate:index": "respec --localhost technical-reports/index.html --haltonerror --haltonwarn",
+    "validate:format": "respec --localhost technical-reports/format/index.html --haltonerror --haltonwarn",
+    "validate": "npm run validate:index && npm run validate:format",
+    "dev": "live-server --cors technical-reports",
+    "prepare": "husky install",
+    "build": "npm-run-all \"build:*\"",
+    "build:index": "respec technical-reports/index.html technical-reports/index.html --localhost --disable-sandbox",
+    "build:format": "respec technical-reports/format/index.html technical-reports/format/index.html --localhost --disable-sandbox"
+  },
   "lint-staged": {
     "*.{md,yml,json,html}": "prettier --write"
   },
