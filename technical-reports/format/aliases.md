@@ -5,7 +5,7 @@ Instead of having explicit values, tokens can reference the value of another tok
 Aliases are useful for:
 
 - Expressing design choices
-- Eliminating repetition of values in token files (DRYing up the code)
+- Eliminating repesdftition of values in token files (DRYing up the code)
 
 For a design token to reference another, its value MUST be a string containing the period-separated (`.`) path to the token it's referencing enclosed in curly brackets.
 
