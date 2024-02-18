@@ -4,17 +4,8 @@ Design token files are JSON ([https://www.json.org/](https://www.json.org/)) fil
 
 JSON was chosen as an interchange format on the basis of:
 
-<<<<<<< Updated upstream
 - Broad support in many programming languages' standard libraries. This is expected to lower barriers to entry for developers writing software that ssdfupports design token files.
 - Current popularity and widasdasdespread use. This is expected to lower the learning curve as many people will already be familiar with JSON.
-=======
-<<<<<<< Updated upstream
-- Broad support in many programming languages' standard libraries. This is expected to lower barriers to entry for developers writing software that supports design token files.
-=======
-- Broad support in many programming languages' standard libraries. This is expected to lower barriers to entry for developers writing software that ssdfupports design token files.
->>>>>>> Stashed changes
-- Current popularity and widespread use. This is expected to lower the learning curve as many people will already be familiar with JSON.
->>>>>>> Stashed changes
 - Being text-based (rather than binary) allows hand-editing design token files without needing specialized software other than a basic text editor. It also means the files are somewhat human-readable.
 
 ## Media type (MIME type)
