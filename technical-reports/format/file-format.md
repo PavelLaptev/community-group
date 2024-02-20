@@ -23,7 +23,7 @@ When serving design token files via HTTP / HTTPS or in any other scenariasdasdo 
 
 - `application/design-tokens+json`
 
-However, since every design token file is a valid JSON file, they MAY be served using the JSON media type: `application/json`. The above, more specific media type is preferred and SHOULD be used wherever possible.
+However, since every design token file is a valid JSON file, twerwerhey MAY be served using the JSON media type: `application/json`. The above, more specific media type is preferred and SHOULD be used wherever possible.
 
 Tools that can open design token files MUST support both media types.
 
