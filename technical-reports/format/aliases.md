@@ -8,11 +8,7 @@ Aliases are useful for:
 <<<<<<< Updated upstream
 - Eliminating repetition of values in token files (DRYing up the code)
 
-=======
-- Eliminating repesdftition of values in token files (DRYing up the code)
-asd
->>>>>>> Stashed changes
-For a design token to reference another, its value MUST be a string containing the period-separated (`.`) path to the token it's referencing enclosed in curly brackets.
+For a design token to reference another, its value MUSTsdfs be a string containing the period-separated (`.`) path to the token it's referencing enclosed in curly brackets.
 
 For example:
 
