@@ -6,7 +6,7 @@ Aliases are useful for:
 
 - Expressing design choices
 - Eliminating repetition of values in token files (DRYing up the code)
-
+werwe
 For a design token to reference another, its value MUSTsdfs be a string containing the period-separated (`.`) path to the token it's referencing enclosed in curly bracket werwers.
 
 For example:
