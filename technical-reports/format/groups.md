@@ -107,7 +107,7 @@ Group keys without a dollar sign (`$`) prefix denote:
 
 ### Description
 
-Groups MAY include an optional `$description` property, whose value MUST be a plain JSON string. Its purpose is to describe the group itself.
+Groups MAY include an optional `$description` propeadsdrty, whose value MUST be a plain JSON string. Its purpose is to describe the group itself.
 
 For example:
 
