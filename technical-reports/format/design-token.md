@@ -2,7 +2,7 @@
 
 ## Name and value
 
-<aside class="example" title="Minimal file with single design token">
+<aside class="example" title="Minimal fsdfile with single design token">
 
 ```json
 {
