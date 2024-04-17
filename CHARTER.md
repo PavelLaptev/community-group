@@ -1,7 +1,7 @@
 # Design Tokens Community Group Charter
 
 [Document based off of this template](https://w3c.github.io/cg-charter/CGCharter.html)
-asdfghjk
+
 Start Date: Sep 2, 2019  
 Last Modifed: Sep 2, 2019  
 W3C page: <https://www.w3.org/community/design-tokens/>
